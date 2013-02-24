@@ -1075,7 +1075,9 @@ var camera, scene, renderer,
 	particles = [];
 
 // let's get going! 
-init();
+$(function() {
+  init();
+});
 
 function init() {
 
@@ -1095,7 +1097,7 @@ function init() {
 
         var $container = $('#container');
 	renderer = new THREE.CanvasRenderer();
-	renderer.setSize( $container.width(),400);
+	renderer.setSize( $container.width(),$(window).height());
 
         $container.append(renderer.domElement);
 
@@ -1209,7 +1211,9 @@ var camera, scene, renderer,
 	particles = [];
 
 // let's get going! 
-init();
+$(function() {
+   init();
+});
 
 function init() {
 
@@ -1229,7 +1233,7 @@ function init() {
 
         var $container = $('#container');
 	renderer = new THREE.CanvasRenderer();
-	renderer.setSize( $container.width(),400);
+	renderer.setSize( $container.width(),$(window).height());
 
         $container.append(renderer.domElement);
 
